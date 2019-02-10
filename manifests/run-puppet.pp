@@ -9,3 +9,8 @@ cron { 'run-puppet':
   hour    => '*',
   minute  => '*/15',
 }
+
+file {'/tmp/dummy':
+	ensure => file,
+	content => "This a dummy file",
+}
